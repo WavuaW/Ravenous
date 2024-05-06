@@ -1,0 +1,37 @@
+
+Copy code
+.business {
+  display: flex;
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #f9f9f9;
+}
+
+.business-image {
+  flex: 0 0 120px;
+  margin-right: 16px;
+}
+
+.business-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.business-info {
+  flex: 1;
+}
+
+.business-info h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.business-info p {
+  margin: 4px 0;
+}
+
+.business-rating {
+  font-weight: bold;
+}
