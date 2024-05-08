@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchBar from './SearchBar';
+import BusinessList from './BusinessList'
 
 // import BusinessList from './BusinessList';
 
@@ -23,6 +24,7 @@ const App = () => {
     <div>
       <h1>Ravenous Restaurant Finder</h1>
       <SearchBar onSearch={handleSearch} />
+      <BusinessList />
     </div>
   );
 };
