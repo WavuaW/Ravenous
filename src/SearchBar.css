@@ -1,44 +1,57 @@
-.search-bar {
+.search-bar-wrapper {
+    width: 94%; /* Make the section wider */
+    background-image: url('https://images.unsplash.com/photo-1601740982034-56bc80e986ee?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIwfHxjb29raW5nfGVufDB8fDB8fHww'); /* Background image */
+    background-size: cover; /* Ensure the image covers the entire wrapper */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Avoid repeating the image */    padding: 16px; /* Add padding around the section */
+    margin: 0 auto; /* Center the section horizontally */
+    height: 250px;
+  }
+  
+  .search-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 16px;
-    background-color: #f2f2f2;
   }
   
   .search-bar-sort-options {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
+    justify-content: space-around; /* Spread out the sort options evenly */
+    border-bottom: 2px solid white; /* Add a line below the sorting options */
+    padding-bottom: 8px; /* Padding below the sorting options to separate them from inputs */
+    color: #fff;
+    font-size: 25px;
+}   
   
-  .search-bar-sort-options button {
+  .sort-option {
     background-color: transparent;
     border: none;
-    padding: 8px 16px;
+    padding: 8px;
     cursor: pointer;
     font-weight: bold;
+    color: white;
   }
   
-  .search-bar-sort-options button.active {
-    color: red;
+  .sort-option.active {
+    color: chocolate; /* Highlight the active sorting option */
   }
   
   .search-bar-inputs {
     display: flex;
-    margin-top: 16px;
+    gap: 8px; /* Space between inputs and button */
+    margin-top: 16px; /* Space between sorting options and inputs */
   }
   
   .search-bar-inputs input {
-    margin-right: 8px;
-    padding: 8px;
+    padding: 12px;
     border: 1px solid #ccc;
   }
   
   .search-bar-inputs button {
     padding: 8px 16px;
-    background-color: #ff3333;
-    color: #fff;
+    background-color: chocolate; 
+    color: #fff; /* White text for the button */
     border: none;
     cursor: pointer;
-  }  
+  }
+  

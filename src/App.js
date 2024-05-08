@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchBar from './SearchBar';
 import BusinessList from './BusinessList'
+import Banner from './Banner';
 
 const App = () => {
   const handleSearch = (term, location, sortBy) => {
@@ -10,7 +11,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Ravenous Restaurant Finder</h1>
+      <Banner />
       <SearchBar onSearch={handleSearch} />
       <BusinessList />
     </div>

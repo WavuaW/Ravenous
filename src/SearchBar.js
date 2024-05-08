@@ -34,32 +34,34 @@ const SearchBar = ({ onSearch }) => {
     };
 
     return (
-        <div className='search-bar'>
-            <div className='search-bar-sort-options'>
+        <div className="search-bar-wrapper">
+            <div className="search-bar">
+                <div className="search-bar-sort-options">
                 {Object.keys(sortByOptions).map((key) => (
-                    <button 
-                     key={key}
-                     className={getSortByClass(sortByOptions[key])}
-                     onClick={() => handleSortByChange(sortByOptions[key])}
+                    <button
+                    key={key}
+                    className={`sort-option ${getSortByClass(sortByOptions[key])}`}
+                    onClick={() => handleSortByChange(sortByOptions[key])}
                     >
-                        {key}
+                    {key}
                     </button>
                 ))}
-            </div>
-            <div className="search-bar-inputs">
+                </div>
+                <div className="search-bar-inputs">
                 <input
-                type="text"
-                placeholder="Search businesses..."
-                value={term}
-                onChange={handleTermChange}
+                    type="text"
+                    placeholder="Search businesses..."
+                    value={term}
+                    onChange={handleTermChange}
                 />
                 <input
-                type="text"
-                placeholder="Location..."
-                value={location}
-                onChange={handleLocationChange}
+                    type="text"
+                    placeholder="Location..."
+                    value={location}
+                    onChange={handleLocationChange}
                 />
                 <button onClick={handleSearch}>Search</button>
+                </div>
             </div>
         </div>
     );
